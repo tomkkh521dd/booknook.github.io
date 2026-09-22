@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BookNook · 属于你的电子书角落</title>
+<meta name="description" content="BookNook：完全本地的 Windows 电子书阅读器。支持 EPUB / TXT / Markdown / MOBI / AZW / AZW3，划线批注、书签目录、深色护眼、离线备份。由卡尔大叔制作，免费无广告。">
+<meta property="og:title" content="BookNook · 属于你的电子书角落">
+<meta property="og:description" content="完全本地的 Windows 电子书阅读器，不联网、不采集、不开会员。">
+<meta property="og:image" content="assets/shots/shelf.png">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="spines" aria-hidden="true">
+  <span class="spine s1"></span><span class="spine s2"></span><span class="spine s3"></span>
+  <span class="spine s4"></span><span class="spine s5"></span>
+</div>
+
+<header class="nav">
+  <a class="brand" href="#top">
+    <img src="assets/icon.png" alt="" width="28" height="28">
+    <span>BookNook</span>
+  </a>
+  <nav>
+    <a href="#features">功能</a>
+    <a href="#gallery">界面</a>
+    <a href="#tech">技术路线</a>
+    <a href="#download" class="nav-dl">下载</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <p class="kicker">Windows 桌面应用 · v1.0.0 · MIT 开源</p>
+    <h1>BookNook<em>。</em></h1>
+    <p class="tagline">一个完全本地的电子书角落。<br>不联网、不采集、不开会员——<br>你和你的书，安安静静待着。</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.0/BookNook.exe">下载便携版 <small>约 96 MB · 双击即用</small></a>
+      <a class="btn ghost" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.0/BookNook%20Setup%201.0.0.exe">安装版 <small>开始菜单 / 卸载</small></a>
+    </div>
+    <p class="hero-meta">EPUB · TXT · Markdown · MOBI · AZW · AZW3 —— 拖进来就能读</p>
+  </section>
+
+  <section class="stats reveal">
+    <div><b>2<small>h</small>37<small>m</small></b><span>第一版从 0 到打包</span></div>
+    <div><b>6</b><span>种书籍格式</span></div>
+    <div><b>3,465</b><span>行自研代码</span></div>
+    <div><b>0</b><span>次网络请求</span></div>
+  </section>
+
+  <section id="features">
+    <div class="section-head">
+      <h2>读书需要的一切，<br>和一切不需要多余的。</h2>
+      <p class="section-sub">没有社区、没有推荐、没有广告位。功能都长在"读"这件事上。</p>
+    </div>
+    <div class="grid">
+      <article class="card reveal">
+        <h3>📚 书架</h3>
+        <p>全部书籍 / 在读 / 已读完 / 未开始自动分类，支持自建收藏集、搜索书名作者、按最近阅读排序。进度直接画在封面下沿。</p>
+      </article>
+      <article class="card reveal">
+        <h3>🖍 划线与批注</h3>
+        <p>选中即划线，右键加批注、加书签、复制。亮色与深色主题下划线颜色自动适配，不刺眼、不发闷。</p>
+      </article>
+      <article class="card reveal">
+        <h3>🔖 书签与目录</h3>
+        <p>章节目录一键跳转，书签带摘录。抽屉展开时正文自动重排，不挡字。</p>
+      </article>
+      <article class="card reveal">
+        <h3>🎨 阅读自定义</h3>
+        <p>字号、行距、页边距、亮度、衬线/无衬线/楷体/等宽字体、浅色/羊皮纸/深色主题、分页或滚动、宽屏双页。可全局应用，也可为每本书单独设置。</p>
+      </article>
+      <article class="card reveal">
+        <h3>🔍 书内搜索与进度记忆</h3>
+        <p>全书关键词检索，关掉软件再打开，回到上次那本书、那一页，还显示"剩余约几分钟"。</p>
+      </article>
+      <article class="card reveal">
+        <h3>🔒 本地与备份</h3>
+        <p>所有数据存在你自己电脑上，软件不联网也能完整使用。一键导出 ZIP 备份，换机随时恢复。</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="section-head">
+      <h2>长这样。</h2>
+      <p class="section-sub">克制的米纸底色，紫色书脊点缀，深色模式留给夜晚。</p>
+    </div>
+    <figure class="shot reveal">
+      <div class="window"><img src="assets/shots/shelf.png" alt="BookNook 书架界面" loading="lazy" width="1920" height="1170"></div>
+      <figcaption>书架：封面、进度、收藏集与搜索</figcaption>
+    </figure>
+    <div class="shot-row">
+      <figure class="shot reveal">
+        <div class="window"><img src="assets/shots/highlight.png" alt="EPUB 阅读与划线批注界面" loading="lazy" width="1920" height="1170"></div>
+        <figcaption>阅读中：划线、批注与进度条</figcaption>
+      </figure>
+      <figure class="shot reveal">
+        <div class="window"><img src="assets/shots/dark-settings.png" alt="深色主题与字体设置界面" loading="lazy" width="1920" height="1170"></div>
+        <figcaption>深色主题：字号、行距、亮度随手调</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="tech">
+    <div class="section-head">
+      <h2>技术路线：轻，且不凑合。</h2>
+      <p class="section-sub">没有框架竞态，没有遥测 SDK。该自己写的解析器，就自己写。</p>
+    </div>
+    <div class="tech">
+      <div class="tech-item reveal">
+        <b>Electron 44 + 原生 JS</b>
+        <span>无 React / Vue，主进程 + 渲染层共 3,465 行自研代码。界面即打开，无构建黑魔法。</span>
+      </div>
+      <div class="tech-item reveal">
+        <b>自研 MOBI / AZW / AZW3 解析器</b>
+        <span>PalmDOC 与 HUFF/CDIC 解压、直接按协议读取，不依赖 Calibre 等外部转换工具；真实出版书籍的 AZW3 同样可直读。</span>
+      </div>
+      <div class="tech-item reveal">
+        <b>EPUB 渲染 + 自研划线层</b>
+        <span>epub.js 之上重写批注层：ResizeObserver 驱动重排，按背景亮度切换 mix-blend-mode，窗口缩放后高亮不错位。</span>
+      </div>
+      <div class="tech-item reveal">
+        <b>多列分页引擎</b>
+        <span>TXT / Markdown 用 CSS 多列排版实现精确翻页，章节独立成页，配合 jschardet 编码探测，GBK 老文件不乱码。</span>
+      </div>
+      <div class="tech-item reveal">
+        <b>本地 JSON 存储 + ZIP 备份</b>
+        <span>元数据、进度、批注全部落盘在用户目录；导出一个 zip 就是全部身家。</span>
+      </div>
+      <div class="tech-item reveal">
+        <b>electron-builder 打包</b>
+        <span>便携版 exe 与 NSIS 安装版双产物，端到端冒烟测试（CDP）验证后才发布。</span>
+      </div>
+    </div>
+    <p class="aside reveal">冷知识：第一版 BookNook 从空目录到可运行的 exe，用了 2 小时 37 分钟——和卡尔大叔一起写书的，还有一个不知疲倦的 AI 结对者。</p>
+  </section>
+
+  <section id="download" class="download">
+    <div class="section-head">
+      <h2>把书读进角落里。</h2>
+      <p class="section-sub">Windows 10 / 11 · x64 · 完全免费，无广告无内购。</p>
+    </div>
+    <div class="dl-cards">
+      <div class="dl-card reveal">
+        <h3>便携版</h3>
+        <p class="dl-size">BookNook.exe · 约 96 MB</p>
+        <p>下载即用，可放 U 盘。适合不想安装的人。</p>
+        <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.0/BookNook.exe">下载</a>
+        <p class="hash" title="SHA-256">SHA-256: c7750f66…bdea970</p>
+      </div>
+      <div class="dl-card reveal">
+        <h3>安装版</h3>
+        <p class="dl-size">BookNook Setup 1.0.0.exe · 约 96 MB</p>
+        <p>标准安装向导，可选安装目录，带卸载入口。</p>
+        <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.0/BookNook%20Setup%201.0.0.exe">下载</a>
+        <p class="hash" title="SHA-256">SHA-256: 22b58ba6…47bf4a</p>
+      </div>
+    </div>
+    <details class="note reveal">
+      <summary>首次运行提示"Windows 已保护你的电脑"？</summary>
+      <p>个人作品尚未购买代码签名证书，SmartScreen 会例行警告。点击弹窗中的「更多信息」→「仍要运行」即可，只此一次。也可用上方 SHA-256 校验文件是否完整。</p>
+    </details>
+    <p class="release-link reveal"><a href="https://github.com/tomkkh521dd/booknook.github.io/releases/latest">查看更新日志与全部版本 →</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <p class="foot-brand"><img src="assets/icon.png" alt="" width="20" height="20"> BookNook</p>
+    <p>由 <b>卡尔大叔</b> 制作 · <a href="https://github.com/tomkkh521dd">GitHub</a> · MIT License</p>
+    <p class="foot-mute">完全免费，不设任何功能限制。如果它陪你读完了想读的书，就是它最好的归宿。</p>
+    <p class="foot-mute">© <span id="year">2026</span> 卡尔大叔</p>
+  </div>
+</footer>
+
+<script>
+  // 滚动渐显
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
