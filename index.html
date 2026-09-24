@@ -27,6 +27,7 @@
     <a href="#features">功能</a>
     <a href="#gallery">界面</a>
     <a href="#tech">技术路线</a>
+    <a href="#changelog">更新</a>
     <a href="#download" class="nav-dl">下载</a>
   </nav>
 </header>
@@ -34,12 +35,12 @@
 <main id="top">
 
   <section class="hero">
-    <p class="kicker">Windows 桌面应用 · v1.0.0 · MIT 开源</p>
+    <p class="kicker">Windows 桌面应用 · v1.0.2 · MIT 开源</p>
     <h1>BookNook<em>。</em></h1>
     <p class="tagline">一个完全本地的电子书角落。<br>不联网、不采集、不开会员——<br>你和你的书，安安静静待着。</p>
     <div class="hero-actions">
-      <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.0/BookNook.exe">下载便携版 <small>约 96 MB · 双击即用</small></a>
-      <a class="btn ghost" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.0/BookNook.Setup.1.0.0.exe">安装版 <small>开始菜单 / 卸载</small></a>
+      <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.2/BookNook-1.0.2-win.zip">下载便携版 <small>ZIP · 解压即用</small></a>
+      <a class="btn ghost" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.2/BookNook.Setup.1.0.2.exe">安装版 <small>开始菜单 / 卸载</small></a>
     </div>
     <p class="hero-meta">EPUB · TXT · Markdown · MOBI · AZW · AZW3 —— 拖进来就能读</p>
   </section>
@@ -139,6 +140,28 @@
     <p class="aside reveal">冷知识：第一版 BookNook 从空目录到可运行的 exe，用了 2 小时 37 分钟——和卡尔大叔一起写书的，还有一个不知疲倦的 AI 结对者。</p>
   </section>
 
+  <section id="changelog">
+    <div class="section-head">
+      <h2>更新说明。</h2>
+      <p class="section-sub">当前版本 v1.0.2（2026-09-24）。</p>
+    </div>
+    <div class="grid">
+      <article class="card reveal">
+        <h3>📑 目录与书内跳转大修</h3>
+        <p>MOBI / AZW3 目录改用书籍自带的 KF8 索引精确定位，老式 MOBI6 自动从书内目录页重建目录；正文里的书内链接（脚注、章节引用）现在可以点击跳转。EPUB 遇到标题是文件名的坏目录时，也会自动从目录页重建。</p>
+      </article>
+      <article class="card reveal">
+        <h3>⚡ 更快、更稳</h3>
+        <p>解析全部移入后台进程池，打开大部头不再卡界面；MOBI 解压提速，EPUB 调进度滑杆不再整本重排；窗口最小化或切到后台时不再出现"假死"；新导入的书立刻出现在书架，无需重启。</p>
+      </article>
+      <article class="card reveal">
+        <h3>🧰 功能与体验</h3>
+        <p>新增一键 ZIP 备份与恢复、划线批注增强；修复书签切换、滚轮翻页、右键菜单、悬停箭头等一批交互问题；便携版改为 ZIP 压缩包，解压即用。</p>
+      </article>
+    </div>
+    <p class="release-link reveal"><a href="https://github.com/tomkkh521dd/booknook.github.io/releases">查看历史版本与完整发布记录 →</a></p>
+  </section>
+
   <section id="download" class="download">
     <div class="section-head">
       <h2>把书读进角落里。</h2>
@@ -147,17 +170,17 @@
     <div class="dl-cards">
       <div class="dl-card reveal">
         <h3>便携版</h3>
-        <p class="dl-size">BookNook.exe · 约 96 MB</p>
-        <p>下载即用，可放 U 盘。适合不想安装的人。</p>
-        <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.0/BookNook.exe">下载</a>
-        <p class="hash" title="SHA-256">SHA-256: c7750f66…bdea970</p>
+        <p class="dl-size">BookNook-1.0.2-win.zip · 约 147 MB</p>
+        <p>解压即用，可放 U 盘。适合不想安装的人。</p>
+        <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.2/BookNook-1.0.2-win.zip">下载</a>
+        <p class="hash" title="SHA-256">SHA-256: f38d1496…11acb4e7</p>
       </div>
       <div class="dl-card reveal">
         <h3>安装版</h3>
-        <p class="dl-size">BookNook.Setup.1.0.0.exe · 约 96 MB</p>
+        <p class="dl-size">BookNook.Setup.1.0.2.exe · 约 107 MB</p>
         <p>标准安装向导，可选安装目录，带卸载入口。</p>
-        <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.0/BookNook.Setup.1.0.0.exe">下载</a>
-        <p class="hash" title="SHA-256">SHA-256: 22b58ba6…47bf4a</p>
+        <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.2/BookNook.Setup.1.0.2.exe">下载</a>
+        <p class="hash" title="SHA-256">SHA-256: f69395d2…16a2da79</p>
       </div>
     </div>
     <details class="note reveal">
@@ -173,6 +196,7 @@
   <div class="foot-inner">
     <p class="foot-brand"><img src="assets/icon.png" alt="" width="20" height="20"> BookNook</p>
     <p>由 <b>卡尔大叔</b> 制作 · <a href="https://github.com/tomkkh521dd">GitHub</a> · MIT License</p>
+    <p class="foot-mute">问题反馈：<a href="mailto:karl@im1069.top">karl@im1069.top</a> · <a href="https://www.youtube.com/@karl1367" target="_blank" rel="noopener">YouTube @karl1367</a> · <a href="https://x.com/Karl02049" target="_blank" rel="noopener">X @Karl02049</a></p>
     <p class="foot-mute">完全免费，不设任何功能限制。如果它陪你读完了想读的书，就是它最好的归宿。</p>
     <p class="foot-mute">© <span id="year">2026</span> 卡尔大叔</p>
   </div>
