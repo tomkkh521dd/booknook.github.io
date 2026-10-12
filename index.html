@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BookNook · 属于你的电子书角落</title>
-<meta name="description" content="BookNook：完全本地的 Windows 电子书阅读器。支持 EPUB / TXT / Markdown / MOBI / AZW / AZW3，划线批注、书签目录、深色护眼、离线备份。由卡尔大叔制作，免费无广告。">
+<meta name="description" content="BookNook：完全本地的 Windows 电子书阅读器。书房/书架真实目录管理，支持 EPUB / TXT / Markdown / MOBI / AZW / AZW3，划线批注、书签目录、深色护眼、离线备份。由卡尔大叔制作，免费无广告。">
 <meta property="og:title" content="BookNook · 属于你的电子书角落">
 <meta property="og:description" content="完全本地的 Windows 电子书阅读器，不联网、不采集、不开会员。">
 <meta property="og:image" content="assets/shots/shelf.png">
@@ -35,12 +35,12 @@
 <main id="top">
 
   <section class="hero">
-    <p class="kicker">Windows 桌面应用 · v1.0.2 · MIT 开源</p>
+    <p class="kicker">Windows 桌面应用 · v1.4.1 · MIT 开源</p>
     <h1>BookNook<em>。</em></h1>
     <p class="tagline">一个完全本地的电子书角落。<br>不联网、不采集、不开会员——<br>你和你的书，安安静静待着。</p>
     <div class="hero-actions">
-      <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.2/BookNook-1.0.2-win.zip">下载便携版 <small>ZIP · 解压即用</small></a>
-      <a class="btn ghost" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.2/BookNook.Setup.1.0.2.exe">安装版 <small>开始菜单 / 卸载</small></a>
+      <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.4.1/BookNook-1.4.1-win.zip">下载便携版 <small>ZIP · 解压即用</small></a>
+      <a class="btn ghost" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.4.1/BookNook.Setup.1.4.1.exe">安装版 <small>开始菜单 / 卸载</small></a>
     </div>
     <p class="hero-meta">EPUB · TXT · Markdown · MOBI · AZW · AZW3 —— 拖进来就能读</p>
   </section>
@@ -48,7 +48,7 @@
   <section class="stats reveal">
     <div><b>2<small>h</small>37<small>m</small></b><span>第一版从 0 到打包</span></div>
     <div><b>6</b><span>种书籍格式</span></div>
-    <div><b>3,465</b><span>行自研代码</span></div>
+    <div><b>5,580</b><span>行自研代码</span></div>
     <div><b>0</b><span>次网络请求</span></div>
   </section>
 
@@ -59,8 +59,12 @@
     </div>
     <div class="grid">
       <article class="card reveal">
+        <h3>🗂 书房与书架</h3>
+        <p>书房是你的电子书主目录（默认 <code>D:\booknook_ebook</code>，可随时更改并自动搬移）。书架就是书房下的文件夹，导入即把书存进书房，「移动到书架」会真实移动文件，书架可任意新建、改名、删除。</p>
+      </article>
+      <article class="card reveal">
         <h3>📚 书架</h3>
-        <p>全部书籍 / 在读 / 已读完 / 未开始自动分类，支持自建收藏集、搜索书名作者、按最近阅读排序。进度直接画在封面下沿。</p>
+        <p>全部书籍 / 在读 / 已读完 / 未开始自动分类，支持收藏集、搜索书名作者与排序，进度直接画在封面下沿；卡片可多选（Ctrl / Shift）批量移动与删除，也能直接把书拖到左侧书架整理。</p>
       </article>
       <article class="card reveal">
         <h3>🖍 划线与批注</h3>
@@ -72,7 +76,7 @@
       </article>
       <article class="card reveal">
         <h3>🎨 阅读自定义</h3>
-        <p>字号、行距、页边距、亮度、衬线/无衬线/楷体/等宽字体、浅色/羊皮纸/深色主题、分页或滚动、宽屏双页。可全局应用，也可为每本书单独设置。</p>
+        <p>字号、行距、页边距、亮度随手调；8 种预设字体之外还能选任意已安装的系统字体，书内写死的字体也会被覆盖。浅色 / 羊皮纸 / 深色主题、分页或滚动、宽屏双页，可全局应用，也可为每本书单独设置。</p>
       </article>
       <article class="card reveal">
         <h3>🔍 书内搜索与进度记忆</h3>
@@ -80,7 +84,7 @@
       </article>
       <article class="card reveal">
         <h3>🔒 本地与备份</h3>
-        <p>所有数据存在你自己电脑上，软件不联网也能完整使用。一键导出 ZIP 备份，换机随时恢复。</p>
+        <p>书籍文件按书房 / 书架真实存放在你指定的目录，元数据与批注也在本机，软件不联网也能完整使用。一键导出 ZIP 备份，换机随时恢复。</p>
       </article>
     </div>
   </section>
@@ -114,7 +118,7 @@
     <div class="tech">
       <div class="tech-item reveal">
         <b>Electron 44 + 原生 JS</b>
-        <span>无 React / Vue，主进程 + 渲染层共 3,465 行自研代码。界面即打开，无构建黑魔法。</span>
+        <span>无 React / Vue，主进程 + 渲染层共 5,580 行自研 JS（不含第三方库）。界面即打开，无构建黑魔法。</span>
       </div>
       <div class="tech-item reveal">
         <b>自研 MOBI / AZW / AZW3 解析器</b>
@@ -130,7 +134,7 @@
       </div>
       <div class="tech-item reveal">
         <b>本地 JSON 存储 + ZIP 备份</b>
-        <span>元数据、进度、批注全部落盘在用户目录；导出一个 zip 就是全部身家。</span>
+        <span>书籍文件按书房 / 书架真实存放，元数据、进度、批注全部落盘在本机；导出一个 zip 就是全部身家。</span>
       </div>
       <div class="tech-item reveal">
         <b>electron-builder 打包</b>
@@ -143,20 +147,24 @@
   <section id="changelog">
     <div class="section-head">
       <h2>更新说明。</h2>
-      <p class="section-sub">当前版本 v1.0.2（2026-09-24）。</p>
+      <p class="section-sub">当前版本 v1.4.1（2026-10-12）。</p>
     </div>
     <div class="grid">
       <article class="card reveal">
-        <h3>📑 目录与书内跳转大修</h3>
-        <p>MOBI / AZW3 目录改用书籍自带的 KF8 索引精确定位，老式 MOBI6 自动从书内目录页重建目录；正文里的书内链接（脚注、章节引用）现在可以点击跳转。EPUB 遇到标题是文件名的坏目录时，也会自动从目录页重建。</p>
+        <h3>🗂 书房与书架</h3>
+        <p>新增书房 / 书架概念：书房是电子书主目录（默认 <code>D:\booknook_ebook</code>，设置里可改并整体搬移），书架是书房下的一级子目录。导入写进书房，「移动到书架」真实移动文件，书架可任意新建改名；旧版本藏在用户目录的书籍副本首次启动会自动迁入书房。</p>
       </article>
       <article class="card reveal">
-        <h3>⚡ 更快、更稳</h3>
-        <p>解析全部移入后台进程池，打开大部头不再卡界面；MOBI 解压提速，EPUB 调进度滑杆不再整本重排；窗口最小化或切到后台时不再出现"假死"；新导入的书立刻出现在书架，无需重启。</p>
+        <h3>🖱 批量整理与拖动</h3>
+        <p>书架卡片支持多选（☑ / Ctrl / Shift 区间），可批量移动到书架、批量移除或删除文件；也能直接把书拖到左侧书架上整理，整批拖拽同样支持，落点会高亮。</p>
       </article>
       <article class="card reveal">
-        <h3>🧰 功能与体验</h3>
-        <p>新增一键 ZIP 备份与恢复、划线批注增强；修复书签切换、滚轮翻页、右键菜单、悬停箭头等一批交互问题；便携版改为 ZIP 压缩包，解压即用。</p>
+        <h3>🔤 字体真正生效</h3>
+        <p>修复部分转换书（epubBuilder、Epubor 等）把字体写死在段落上、导致「换字体没反应」的问题：阅读器设置现在会覆盖书内样式，代码块仍保留等宽。预设字体扩到 8 种，并自动列出已安装的系统字体；新增「恢复默认显示」与「恢复默认阅读设置」。</p>
+      </article>
+      <article class="card reveal">
+        <h3>🧩 交互细节</h3>
+        <p>点空白处即可收起字体面板与右键菜单（含 EPUB 正文区域）；修复「应用到所有书籍」后设置回退、新建书架后设置页书架数不刷新等问题。</p>
       </article>
     </div>
     <p class="release-link reveal"><a href="https://github.com/tomkkh521dd/booknook.github.io/releases">查看历史版本与完整发布记录 →</a></p>
@@ -170,17 +178,17 @@
     <div class="dl-cards">
       <div class="dl-card reveal">
         <h3>便携版</h3>
-        <p class="dl-size">BookNook-1.0.2-win.zip · 约 147 MB</p>
+        <p class="dl-size">BookNook-1.4.1-win.zip · 约 147 MB</p>
         <p>解压即用，可放 U 盘。适合不想安装的人。</p>
-        <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.2/BookNook-1.0.2-win.zip">下载</a>
-        <p class="hash" title="SHA-256">SHA-256: f38d1496…11acb4e7</p>
+        <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.4.1/BookNook-1.4.1-win.zip">下载</a>
+        <p class="hash" title="SHA-256">SHA-256: 054200a2…e298d791</p>
       </div>
       <div class="dl-card reveal">
         <h3>安装版</h3>
-        <p class="dl-size">BookNook.Setup.1.0.2.exe · 约 107 MB</p>
+        <p class="dl-size">BookNook.Setup.1.4.1.exe · 约 107 MB</p>
         <p>标准安装向导，可选安装目录，带卸载入口。</p>
-        <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.0.2/BookNook.Setup.1.0.2.exe">下载</a>
-        <p class="hash" title="SHA-256">SHA-256: f69395d2…16a2da79</p>
+        <a class="btn primary" href="https://github.com/tomkkh521dd/booknook.github.io/releases/download/v1.4.1/BookNook.Setup.1.4.1.exe">下载</a>
+        <p class="hash" title="SHA-256">SHA-256: 28048d89…7901452b</p>
       </div>
     </div>
     <details class="note reveal">

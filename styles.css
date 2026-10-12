@@ -25,6 +25,11 @@ body {
 }
 img { max-width: 100%; display: block; }
 a { color: var(--accent); }
+code {
+  font-family: ui-monospace, Consolas, "Cascadia Mono", "Courier New", monospace;
+  font-size: .9em; background: rgba(79,70,184,.09); color: var(--accent-deep);
+  padding: 1px 5px; border-radius: 4px; word-break: break-all;
+}
 
 /* 书脊装饰 */
 .spines { position: fixed; left: 0; top: 0; bottom: 0; width: 14px; display: flex; flex-direction: column; z-index: 5; }
